@@ -1,4 +1,3 @@
-
 #mariaDB 
 spring:
   datasource:
@@ -11,10 +10,17 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   thymeleaf:
-      enabled: false
+    enabled: false
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+  devtools:
+    #Auto Restart : 자동으로 서버 재기동 기능
+    restart:
+      enabled: true
+    #리소스 변경 시 새로고침하는 트리거
+    livereload:
+      enabled: true
 server:
   port: 8080
