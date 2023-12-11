@@ -1,4 +1,4 @@
 package project.meow.DAO;
 
-public class MemberDAO {
+public class UsersDAO {
 }
