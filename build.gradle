@@ -33,6 +33,7 @@ dependencies  {
 	implementation 'javax.servlet:jstl:1.2'
 	//Spring Security 의존성 주입
 	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.security:spring-security-test'
 }
 
 tasks.named('test') {

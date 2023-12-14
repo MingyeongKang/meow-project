@@ -10,19 +10,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../img/cat-favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img_main/cat-favicon.png">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css_main/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="../css/icons.min.css">
+    <link rel="stylesheet" href="resources/css_main/icons.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="../css/plugins.css">
+    <link rel="stylesheet" href="resources/css_main/plugins.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="resources/css_main/style.css">
 </head>
 
 <body>
@@ -35,9 +35,9 @@
                         <div class="row">
                             <div class="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div class="logo">
-                                    <img alt="" src="../img/logo/cat2-icon.png">
+                                    <img alt="" src="resources/img_main/logo/cat2-icon.png">
                                     <a href="mainpage.jsp">
-                                        <img alt="" src="../img/logo/meow-logo.png">
+                                        <img alt="" src="resources/img_main/logo/meow-logo.png">
                                     </a>
                                 </div>
                             </div>
@@ -54,18 +54,18 @@
                                 <li><a href="#" style="font-family: sans-serif ;">공지사항</a></li>
                                 <li><a href="#"> 커뮤니티 <i class="fa fa-angle-down"></i></a>
                                     <ul class="submenu">
-                                        <li><a href="#"><img src="../img/logo/catfoot.png" width="15%"
+                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png" width="15%"
                                                                       style="margin-right: 8px;">
                                             자유게시판</a></li>
-                                        <li><a href="#"><img src="../img/logo/catfoot.png"
+                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
                                                                           width="15%" style="margin-right: 8px;">입양 게시판</a></li>
-                                        <li><a href="#"><img src="../img/logo/catfoot.png"
+                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
                                                                          width="15%" style="margin-right: 8px;">팁 게시판</a></li>
-                                        <li><a href="#"><img src="../img/logo/catfoot.png"
+                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
                                                                          width="15%" style="margin-right: 8px;">공구 게시판 </a></li>
-                                        <li><a href="#"><img src="../img/logo/catfoot.png"
+                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
                                                                            width="15%" style="margin-right: 8px;">짤 게시판</a></li>
-                                        <li><a href="#"><img src="../img/logo/catfoot.png"
+                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
                                                                         width="15%" style="margin-right: 8px;">고양이 백과사전</a></li>
                                     </ul>
                                 </li>
@@ -169,7 +169,7 @@
                                         <div style="position: relative; padding: 25px 0;">
                                             <span
                                                     style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">BEST</span>
-                                            <img src="../img/cat.png" width="10%"
+                                            <img src="resources/img_main/cat.png" width="10%"
                                                  style="position: relative; left: 15rem;">
                                         </div>
                                     </div>
@@ -241,7 +241,7 @@
                                         <div style="position: relative; padding: 25px 0;">
                                             <span
                                                     style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">커뮤니티</span>
-                                            <img src="../img/cat1.png" width="10%"
+                                            <img src="resources/img_main/cat1.png" width="10%"
                                                  style="position: relative; left: 15rem;">
                                         </div>
                                     </div>
@@ -314,7 +314,7 @@
                                             <div style="position: relative; padding: 25px 0;">
                                                 <span
                                                         style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">Q&A</span>
-                                                <img src="../img/cat2.png" width="10%"
+                                                <img src="resources/img_main/cat2.png" width="10%"
                                                      style="position: relative; left: 15rem;">
                                             </div>
                                         </a>
@@ -388,7 +388,7 @@
                                             <div style="position: relative; padding: 25px 0;">
                                                 <span
                                                         style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">공지사항</span>
-                                                <img src="../img/cat3.png" width="10%"
+                                                <img src="resources/img_main/cat3.png" width="10%"
                                                      style="position: relative; left: 15rem;">
                                             </div>
                                         </a>
@@ -564,16 +564,16 @@
 <!-- All JS is here
 ============================================ -->
 
-<script src="../js/vendor/modernizr-3.11.7.min.js"></script>
-<script src="../js/vendor/jquery-v3.6.0.min.js"></script>
-<script src="../js/vendor/jquery-migrate-v3.3.2.min.js"></script>
-<script src="../js/vendor/popper.min.js"></script>
-<script src="../js/vendor/bootstrap.min.js"></script>
-<script src="../js/plugins.js"></script>
+<script src="resources/js_main/vendor/modernizr-3.11.7.min.js"></script>
+<script src="resources/js_main/vendor/jquery-v3.6.0.min.js"></script>
+<script src="resources/js_main/vendor/jquery-migrate-v3.3.2.min.js"></script>
+<script src="resources/js_main/vendor/popper.min.js"></script>
+<script src="resources/js_main/vendor/bootstrap.min.js"></script>
+<script src="resources/js_main/plugins.js"></script>
 <!-- Ajax Mail -->
-<script src="../js/ajax-mail.js"></script>
+<script src="resources/js_main/ajax-mail.js"></script>
 <!-- Main JS -->
-<script src="../js/main.js"></script>
+<script src="resources/js_main/main.js"></script>
 
 </body>
 
