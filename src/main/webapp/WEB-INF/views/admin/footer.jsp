@@ -12,7 +12,7 @@
                 <div class="footer_row2" style="display: flex;">
                     <div class="footer_banner" style="width: 10rem; display: block;">
                         <a href="homepage">
-                            <img alt="" src="/static/images/admin/meow.png">
+                            <img alt="" src="${pageContext.request.contextPath}/resources/img/admin/meow.png">
                         </a>
                         <p style="margin-top: 0; text-align: center;">I love cats</p>
                     </div>

@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modernize Free</title>
-  <link rel="shortcut icon" type="image/png" href="/images/admin/favicon.png" />
-  <link rel="stylesheet" href="/css/admin/manager_styles.min.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEOW</title>
+    <link rel="shortcut icon" type="image/png" href="/images/admin/favicon.png" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin/manager_styles.css" />
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div>
             <div class="brand-logo d-flex align-items-center justify-content-between" style="padding-left: 15%;">
                 <a href="index.html" class="text-nowrap logo-img">
-                    <img src="/images/admin/meow.png" width="180" alt="" />
+                    <img src="${pageContext.request.contextPath}/resources/img/admin/meow.png" width="180" alt="" />
                 </a>
                 <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                     <i class="ti ti-x fs-8"></i>
@@ -33,7 +33,7 @@
                         <span class="hide-menu">Home</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/templates/admin/index.html" aria-expanded="false">
+                        <a class="sidebar-link" href="${pageContext.request.contextPath}/views/admin/admin.jsp" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
@@ -46,7 +46,7 @@
                     </li>
                     <li class="sidebar-item">
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/templates/admin/일반회원.html" aria-expanded="false">
+                        <a class="sidebar-link" href="${pageContext.request.contextPath}/views/admin/일반회원.jsp" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-plus"></i>
                 </span>
@@ -54,7 +54,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/templates/admin/관리자목록.html" aria-expanded="false">
+                        <a class="sidebar-link" href="${pageContext.request.contextPath}/views/admin/관리자목록.jsp" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-plus"></i>
                 </span>
@@ -66,7 +66,7 @@
                         <span class="hide-menu">게시글 관리</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/templates/admin/신고관리.html" aria-expanded="false">
+                        <a class="sidebar-link" href="${pageContext.request.contextPath}/views/admin/신고관리.jsp" aria-expanded="false">
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
@@ -79,7 +79,7 @@
                         <span class="hide-menu">인사이트 분석</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/templates/admin/일간현황.html" aria-expanded="false">
+                        <a class="sidebar-link" href="${pageContext.request.contextPath}/views/admin/일간현황.jsp" aria-expanded="false">
               <span>
                 <i class="ti ti-aperture"></i>
               </span>
@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/templates/admin/방문분석.html" aria-expanded="false">
+                        <a class="sidebar-link" href="${pageContext.request.contextPath}/views/admin/방문분석.jsp" aria-expanded="false">
               <span>
                 <i class="ti ti-aperture"></i>
               </span>
@@ -95,7 +95,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="/templates/admin/사용자분석.html" aria-expanded="false">
+                        <a class="sidebar-link" href="${pageContext.request.contextPath}/views/admin/사용자분석.jsp" aria-expanded="false">
               <span>
                 <i class="ti ti-aperture"></i>
               </span>
@@ -120,7 +120,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                                aria-expanded="false">
-                                <img src="/images/admin/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                                <img src="${pageContext.request.contextPath}/resources/img/admin/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                                 <div class="message-body">
@@ -148,26 +148,29 @@
       <div class="container-fluid">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title fw-semibold mb-4">신고 관리</h5>
+            <h5 class="card-title fw-semibold mb-4">일반회원</h5>
             <div>
             </div>
             <div style="display: flex; justify-content: flex-start; ">
               <div class="filter-search-container" style="display: flex; margin-bottom: 10px; align-items: center;">
                 <div class="filter-container" style="margin-right: 5px;">
                     <select id="filter" class="form-select" style="padding-top: 7px; padding-bottom: 7px;">
-                        <option value="option1">자유</option>
-                        <option value="option2">입양</option>
-                        <option value="option3">tip</option>
-                        <option value="option3">간식공구</option>
-                        <option value="option3">짤</option>
-                        <option value="option3">백과사전</option>
+                        <option value="option1">ID</option>
+                        <option value="option2">이름</option>
+                        <option value="option3">닉네임</option>
                     </select>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="search" placeholder=" 내용을 입력하세요." class="search-box" style=" padding-top: 7px; padding-bottom: 7px;">
+                </div>
+                <div>
+                  <button type="button" class="btn btn-info m-1" style="font-weight: bold; padding-top: 10px; padding-bottom: 10px;">검색</button>             
                 </div>
               </div>
               <div class="schedule" style="display: flex; margin-left: auto;">
-                <input type="date" class="schedule_date" id="date" value="2023-01-01" style="margin-right: 5px; margin-top: 5px; margin-bottom: 15px;">
+                <input type="date" class="schedule_date" id="date1" value="2023-01-01" style="margin-right: 5px; margin-top: 5px; margin-bottom: 15px;">
                 <p style="margin-top: 13px; font-weight: bold;">~</p>
-                <input type="date" class="schedule_date" id="date" value="2024-01-31" style="margin-left: 5px; margin-top: 5px; margin-bottom: 15px;">
+                <input type="date" class="schedule_date" id="date2" value="2024-01-31" style="margin-left: 5px; margin-top: 5px; margin-bottom: 15px;">
                 <div>
                   <button type="button" class="btn btn-info m-1" style="font-weight: bold; white-space: nowrap; padding-top: 10px; padding-bottom: 12px;">조회</button>             
                 </div>
@@ -178,38 +181,68 @@
                 <thead className="table-light" style="background-color: #CFCFCF;">
                     <tr>
                       <th scope="col">No.</th>
-                      <th scope="col">게시판</th>
-                      <th scope="col">제목</th>
-                      <th scope="col">신고 ID</th>
-                      <th scope="col">신고일</th>
-                      <th scope="col">삭제(Y/N)</th>
+                      <th scope="col">ID</th>
+                      <th scope="col">이름</th>
+                      <th scope="col">닉네임</th>
+                      <th scope="col">가입일</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">회원상태</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr style="border-bottom: 1px solid #d8d8d8;">
                         <th scope="row">1</th>
-                        <td>자유</td>
-                        <td>우헤헤헤</td>
-                        <td>abc123</td>
-                        <td>2023-11-02</td>
-                        <td>Y</td>
+                        <td>
+                          <a href="일반회원_상세.jsp" aria-expanded="false">qwe123</a>
+                        </td>
+                        <td>이마크</td>
+                        <td>Mark</td>
+                        <td>2023-11-01</td>
+                        <td>aabc@gamil.com</td>
+                        <td>
+                          <select class="selectBox" name="column" id="column1"
+                            style="border-radius: 5px; border: 1px solid #818181e8; background-color: #fff; font-size: 15px; outline: none; padding-left: 5px; padding-right: 5px;">
+                            <option class="search_option" value="active">활동중</option>
+                            <option class="search_option" value="stop">휴면</option>
+                            <option class="search_option" value="delete">탈퇴</option>
+                          </select>
+                        </td>
                     </tr>
                     <tr style="border-bottom: 1px solid #d8d8d8;">
                         <th scope="row">2</th>
-                        <td>간식공구</td>
-                        <td>먹태공구</td>
-                        <td>dkfjwi</td>
-                        <td>2023-11-02</td>
-                        <td>Y</td>
-
+                        <td>
+                          <a href="일반회원_상세.jsp" aria-expanded="false">dijwi144</a>
+                        </td>                        
+                        <td>도봉순</td>
+                        <td>뚱냥이사랑해</td>
+                        <td>2023-11-03</td>
+                        <td>abc@gamil.com</td>
+                        <td>
+                          <select class="selectBox" name="column" id="column2"
+                            style="border-radius: 5px; border: 1px solid #818181e8; background-color: #fff; font-size: 15px; outline: none; padding-left: 5px; padding-right: 5px;">
+                            <option class="search_option" value="active">활동중</option>
+                            <option class="search_option" value="stop">휴면</option>
+                            <option class="search_option" value="delete">탈퇴</option>
+                          </select>
+                        </td>
                     </tr>
                     <tr style="border-bottom: 1px solid #d8d8d8;">
                         <th scope="row">3</th>
-                        <td>짤</td>
-                        <td>못생긴 고양이짤모음</td>
-                        <td>wwie</td>
+                        <td>
+                          <a href="일반회원_상세.jsp" aria-expanded="false">poiuxkj1</a>
+                        </td>
+                        <td>강남순</td>
+                        <td>강양이</td>
                         <td>2023-11-05</td>
-                        <td>N</td>
+                        <td>def@gamil.com</td>
+                        <td>
+                          <select class="selectBox" name="column" id="column3"
+                            style="border-radius: 5px; border: 1px solid #818181e8; background-color: #fff; font-size: 15px; outline: none; padding-left: 5px; padding-right: 5px;">
+                            <option class="search_option" value="active">활동중</option>
+                            <option class="search_option" value="stop">휴면</option>
+                            <option class="search_option" value="delete">탈퇴</option>
+                          </select>
+                        </td>
                     </tr>
                 </tbody>
             </Table>  
@@ -224,7 +257,7 @@
               <div class="footer_row2" style="display: flex;">
                   <div class="footer_banner" style="width: 10rem; display: block;">
                       <a href="homepage">
-                          <img alt="" src="/images/admin/meow.png">
+                          <img alt="" src="/WEB-INF/resources/img/admin/meow.png">
                       </a>
                       <p style="margin-top: 0; text-align: center;">I love cats</p>
                   </div>
@@ -245,11 +278,11 @@
       </footer>
   </div>
   </div>
-    <script src="/js/admin/manager_jquery.min.js"></script>
-    <script src="/js/admin/manager_bootstrap.bundle.min.js"></script>
-    <script src="/js/admin/manager_sidebarmenu.js"></script>
-    <script src="/js/admin/manager_app.min.js"></script>
-    <script src="/js/admin/manager_simplebar.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/admin/manager_jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/admin/manager_bootstrap.bundle.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/admin/manager_sidebarmenu.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/admin/manager_app.min.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/admin/manager_simplebar.js"></script>
 </body>
 
 </html>
