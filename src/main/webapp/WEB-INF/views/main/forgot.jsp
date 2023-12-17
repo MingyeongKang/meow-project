@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -10,27 +12,27 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../img/cat.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/main/cat.png">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="../css/icons.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/icons.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="../css/plugins.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/plugins.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/style.css">
 </head>
 
 <body class="h-100 d-flex justify-content-center">
 <div>
     <div style="display: flex; justify-content: center; margin-top: 8rem; padding-bottom: 4rem;">
         <div>
-            <a href="mainpage.jsp">
-                <img src="../img/logo/meow-logo.png" style="position: relative; left: 9rem;" alt="">
+            <a href="/meow/">
+                <img src="${pageContext.request.contextPath}/resources/img/main/logo/meow-logo.png" style="position: relative; left: 9rem;" alt="">
             </a>
             <h2 style="margin-top: 1.5rem; text-align: center; font-weight: 700;">계정찾기</h2>
             <div>
@@ -75,16 +77,16 @@
 <!-- All JS is here
 ============================================ -->
 
-<script src="../js/vendor/modernizr-3.11.7.min.js"></script>
-<script src="../js/vendor/jquery-v3.6.0.min.js"></script>
-<script src="../js/vendor/jquery-migrate-v3.3.2.min.js"></script>
-<script src="../js/vendor/popper.min.js"></script>
-<script src="../js/vendor/bootstrap.min.js"></script>
-<script src="../js/plugins.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/modernizr-3.11.7.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-v3.6.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-migrate-v3.3.2.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/popper.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/plugins.js"></script>
 <!-- Ajax Mail -->
-<script src="../js/ajax-mail.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/ajax-mail.js"></script>
 <!-- Main JS -->
-<script src="../js/main.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/main.js"></script>
 
 </body>
 
