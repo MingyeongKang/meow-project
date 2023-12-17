@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -10,25 +12,25 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../img/cat.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/main/cat.png">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="../css/icons.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/icons.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="../css/plugins.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/plugins.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/style.css">
 </head>
 
 <body>
 <div class="breadcrumb-area pt-50" style="text-align: center;">
-    <a href="mainpage.jsp">
-        <img src="../img/logo/meow-logo.png" alt="">
+    <a href="/meow/">
+        <img src="${pageContext.request.contextPath}/resources/img/main/logo/meow-logo.png" alt="">
     </a>
 </div>
 <div class="login-register-area pt-30 pb-100">
@@ -54,12 +56,12 @@
                                         <a href="#"
                                            class="d-inline-flex justify-content-center w-60 border rounded-3 px-2 py-2"
                                            style="height: 5rem;">
-                                            <img src="../img/logo/naver.png" alt="">
+                                            <img src="${pageContext.request.contextPath}/resources/img/main/logo/naver.png" alt="">
                                         </a>
                                         <a href="#"
                                            class="d-inline-flex justify-content-center w-60 border rounded-3 px-2 py-2"
                                            style="height: 5rem;">
-                                            <img src=" ../img/logo/kakaotalk.png" alt="">
+                                            <img src="${pageContext.request.contextPath}/resources/img/main/logo/kakaotalk.png" alt="">
                                         </a>
                                     </div>
                                     <form action="#" method="post">
@@ -69,7 +71,7 @@
                                         <input type="password" name="user-password">
                                         <div class="button-box">
                                             <div class="login-toggle-btn">
-                                                <a href="#">계정 찾기</a>
+                                                <a href="forgot">계정 찾기</a>
                                             </div>
                                             <button type="submit"><span>로그인</span></button>
                                         </div>
@@ -110,7 +112,7 @@
             <div class="col-lg-2 col-md-4 col-sm-4">
                 <div class="copyright mb-30">
                     <div class="footer-logo">
-                        <a href="mainpage.jsp">
+                        <a href="main.jsp">
                             <img alt="" src="../img/logo/logo.png">
                         </a>
                     </div>
@@ -347,16 +349,16 @@
 <!-- All JS is here
 ============================================ -->
 
-<script src="../js/vendor/modernizr-3.11.7.min.js"></script>
-<script src="../js/vendor/jquery-v3.6.0.min.js"></script>
-<script src="../js/vendor/jquery-migrate-v3.3.2.min.js"></script>
-<script src="../js/vendor/popper.min.js"></script>
-<script src="../js/vendor/bootstrap.min.js"></script>
-<script src="../js/plugins.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/modernizr-3.11.7.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-v3.6.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-migrate-v3.3.2.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/popper.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/plugins.js"></script>
 <!-- Ajax Mail -->
-<script src="../js/ajax-mail.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/ajax-mail.js"></script>
 <!-- Main JS -->
-<script src="../js/main.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/main.js"></script>
 
 </body>
 
