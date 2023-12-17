@@ -6,12 +6,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Modernize Free</title>
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/cat-favicon.png"> -->
-  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="assets/css/styles.min.css" />
+  <link rel="shortcut icon" type="image/png" href="${pageContext.request.contextPath}/resources/img/admin/meow.png" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin/manager_styles.css" />
+
 </head>
 
 <body>
+<div>
+  <header class="header-area header-in-container clearfix">
+    <div class="header-top-area">
+      <div class="container">
+        <div class="header-top-wap">
+          <div class="header-bottom sticky-bar header-res-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img alt="" src="assets/img/logo/cat2-icon.png">
+                      <img alt="" src="assets/img/logo/meow-logo.png">
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+            <div class="main-menu">
+              <nav>
+                <ul>
+                  <li style="margin-left: 5rem;"><a href="shop.html">Q&A</a></li>
+                  <li><a href="#" style="font-family: sans-serif ;">공지사항</a></li>
+                  <li><a href="#"> 커뮤니티 <i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                      <li><a href="about.html">자유 게시판</a></li>
+                      <li><a href="cart-page.html">입양 게시판</a></li>
+                      <li><a href="checkout.html">팁 게시판</a></li>
+                      <li><a href="wishlist.html">공구 게시판 </a></li>
+                      <li><a href="my-account.html">짤 게시판</a></li>
+                      <li><a href="contact.html">고양이 백과사전</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-offer">
+            <!-- 우측 상단 -->
+            <button class="loginBtn" style="position: relative; top: 1.5rem; left: 3rem; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: white; font-weight: bold; font-size: .75rem; line-height: 1rem; cursor: pointer;
+                            outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">로그인</button>
+            <button class="joinBtn"
+                    style="position: relative; top: 1.5rem; left: 3rem; border: none; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: crimson; color: white; margin-left: 10px; font-weight: 500; font-size: .75rem; line-height: 1rem; cursor: pointer; outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">회원가입</button>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+              <div class="header-right-wrap">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
@@ -52,6 +109,7 @@
                 <span class="hide-menu">회원 탈퇴</span>
               </a>
             </li>
+          </ul>
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -90,15 +148,15 @@
                   <form>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">이름</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <input type="password" class="form-control" id="mypage_name">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">아이디</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <input type="password" class="form-control" id="mypage_id">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">비밀번호</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <input type="password" class="form-control" id="mypage_pw">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">전화번호</label>
@@ -122,11 +180,39 @@
       </div>
     </div>
   </div>
-  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/sidebarmenu.js"></script>
-  <script src="../assets/js/app.min.js"></script>
-  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <footer class="footer-area bg-gray pt-100 pb-70">
+    <div style="border-top: solid 1px rgb(212, 212, 212);">
+      <footer class="footer_container" style="padding-top: 1.74rem; padding-bottom: 1.75rem; border: 0 solid #e5e7eb;">
+        <div class="footer_row" style="max-width: 90%; margin: auto;">
+          <div class="footer_row2" style="display: flex;">
+            <div class="footer_banner" style="width: 10rem; display: block;">
+              <a href="homepage">
+                <img alt="" src="${pageContext.request.contextPath}/resources/img/admin/meow.png">
+              </a>
+              <p style="margin-top: 0; text-align: center;">I love cats</p>
+            </div>
+            <div class="footer_company" style="padding-left: 5%;">
+              <div style="font-size: small; padding-top: 3%;">
+                상호명:
+                <strong>(주)고사모</strong>
+                | 대표명: 강민경, 김예지, 문형섭
+              </div>
+              <div>
+                <p style="font-size: small;">Copyright © (주)고사모</p>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </footer>
+<%--  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>--%>
+<%--  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>--%>
+<%--  <script src="../assets/js/sidebarmenu.js"></script>--%>
+<%--  <script src="../assets/js/app.min.js"></script>--%>
+<%--  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>--%>
     <!--ionicon.js(커뮤니티 아이콘) 모듈-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

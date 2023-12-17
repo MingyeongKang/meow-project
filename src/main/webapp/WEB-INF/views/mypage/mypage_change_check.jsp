@@ -6,11 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Modernize Free</title>
-  <!-- Icon Font CSS -->
-  <link rel="stylesheet" href="assets/css/icons.min.css">
-  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
-
-  <link rel="stylesheet" href="assets/css/styles.min.css" />
+  <link rel="shortcut icon" type="image/png" href="${pageContext.request.contextPath}/resources/img/admin/meow.png" />
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin/manager_styles.css" />
 </head>
 
 <body>
@@ -54,6 +51,7 @@
                 <span class="hide-menu">회원 탈퇴</span>
               </a>
             </li>
+          </ul>
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -86,24 +84,17 @@
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title fw-semibold mb-4">회원 탈퇴</h5>
+              <h5 class="card-title fw-semibold mb-4" style="font-size: 20px;">회원 정보 수정</h5>
               <div class="card">
-                <div class="card-body">
+                <div class="card-body text-center">
                   <form>
-                    
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">아이디</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <label for="exampleInputPassword1" class="form-label" style="font-size: 20px; margin-bottom: 2rem; margin-top: 2rem;">비밀번호 확인</label>
+                      <input type="password" class="form-control mx-auto" style="width: 350px;" id="exampleInputPassword1">
+                      <!-- Adjust the width to your preference -->
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">비밀번호</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div id="emailHelp" class="form-text">탈퇴 클릭 시 회원 탈퇴가 완료됩니다.</div>
-                    
-                   
                     <div style="text-align: right;">
-                      <button type="submit" class="btn btn-primary" >탈퇴</button>
+                      <button type="submit" class="btn btn-primary" onclick="location.href='mypage_check_change.html'">확인</button>
                     </div>
                   </form>
                 </div>
@@ -114,14 +105,10 @@
       </div>
     </div>
   </div>
-  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/sidebarmenu.js"></script>
-  <script src="../assets/js/app.min.js"></script>
-  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
-  <!--ionicon.js(커뮤니티 아이콘) 모듈-->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--ionicon.js(커뮤니티 아이콘) 모듈-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

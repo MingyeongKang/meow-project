@@ -63,7 +63,34 @@
         </div>
     </div>
 </div>
-
+<footer class="footer-area bg-gray pt-100 pb-70">
+    <div style="border-top: solid 1px rgb(212, 212, 212);">
+        <footer class="footer_container" style="padding-top: 1.74rem; padding-bottom: 1.75rem; border: 0 solid #e5e7eb;">
+            <div class="footer_row" style="max-width: 90%; margin: auto;">
+                <div class="footer_row2" style="display: flex;">
+                    <div class="footer_banner" style="width: 10rem; display: block;">
+                        <a href="homepage">
+                            <img alt="" src="${pageContext.request.contextPath}/resources/img/admin/meow.png">
+                        </a>
+                        <p style="margin-top: 0; text-align: center;">I love cats</p>
+                    </div>
+                    <div class="footer_company" style="padding-left: 5%;">
+                        <div style="font-size: small; padding-top: 3%;">
+                            상호명:
+                            <strong>(주)고사모</strong>
+                            | 대표명: 강민경, 김예지, 문형섭
+                        </div>
+                        <div>
+                            <p style="font-size: small;">Copyright © (주)고사모</p>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</footer>
 
 
 
