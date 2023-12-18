@@ -12,63 +12,6 @@
 </head>
 
 <body>
-<div>
-  <header class="header-area header-in-container clearfix">
-    <div class="header-top-area">
-      <div class="container">
-        <div class="header-top-wap">
-          <div class="header-bottom sticky-bar header-res-padding">
-            <div class="container">
-              <div class="row">
-                <div class="col-xl-2 col-lg-2 col-md-6 col-4">
-                  <div class="logo">
-                    <a href="index.html">
-                      <img alt="" src="assets/img/logo/cat2-icon.png">
-                      <img alt="" src="assets/img/logo/meow-logo.png">
-                    </a>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-8 col-lg-8 d-none d-lg-block">
-            <div class="main-menu">
-              <nav>
-                <ul>
-                  <li style="margin-left: 5rem;"><a href="shop.html">Q&A</a></li>
-                  <li><a href="#" style="font-family: sans-serif ;">공지사항</a></li>
-                  <li><a href="#"> 커뮤니티 <i class="fa fa-angle-down"></i></a>
-                    <ul class="submenu">
-                      <li><a href="about.html">자유 게시판</a></li>
-                      <li><a href="cart-page.html">입양 게시판</a></li>
-                      <li><a href="checkout.html">팁 게시판</a></li>
-                      <li><a href="wishlist.html">공구 게시판 </a></li>
-                      <li><a href="my-account.html">짤 게시판</a></li>
-                      <li><a href="contact.html">고양이 백과사전</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="header-offer">
-            <!-- 우측 상단 -->
-            <button class="loginBtn" style="position: relative; top: 1.5rem; left: 3rem; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: white; font-weight: bold; font-size: .75rem; line-height: 1rem; cursor: pointer;
-                            outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">로그인</button>
-            <button class="joinBtn"
-                    style="position: relative; top: 1.5rem; left: 3rem; border: none; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: crimson; color: white; margin-left: 10px; font-weight: 500; font-size: .75rem; line-height: 1rem; cursor: pointer; outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">회원가입</button>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-8">
-              <div class="header-right-wrap">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-</div>
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
@@ -77,8 +20,8 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
-            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+          <a href="${pageContext.request.contextPath}/meow/main" class="text-nowrap logo-img">
+            <img src="${pageContext.request.contextPath}/resources/img/admin/meow.png" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
