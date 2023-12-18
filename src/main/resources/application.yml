@@ -1,21 +1,35 @@
-#mariaDB 
 spring:
+  # oauth 설정
+  profiles:
+    include: oauth
+
+  #mariaDB
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     username: meow
     password: 1234
     url: jdbc:mariadb://localhost:3306/meow
+
   mvc:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
     static-path-pattern: /resources/**
+
   thymeleaf:
     enabled: false
+
+  # JPA 설정
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+  session:
+    store-type: jdbc  # 세션 저장소를 JDBC로 설정
+    jdbc:
+      initialize-schema: always  # 세션 테이블을 항상 초기화
+
   devtools:
     #Auto Restart : 자동으로 서버 재기동 기능
     restart:
