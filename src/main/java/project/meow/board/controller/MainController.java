@@ -19,6 +19,11 @@ public class MainController {
         return "/main/forgot";
     }
 
+    @GetMapping("/main")
+    public  String main(){
+        return "/main/main";
+    }
+
 //    public String mainPage(@AuthenticationPrincipal User user, Model model){
 //        model.addAttribute("loginId", user.getUsername());
 //        model.addAttribute("loginRoles", user.getAuthorities());
