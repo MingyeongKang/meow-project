@@ -38,7 +38,7 @@
                             <div class="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div class="logo">
                                     <img alt="" src="${pageContext.request.contextPath}/resources/img/main/logo/cat2-icon.png">
-                                    <a href="main.jsp">
+                                    <a href="/meow/">
                                         <img alt="" src="${pageContext.request.contextPath}/resources/img/main/logo/meow-logo.png">
                                     </a>
                                 </div>

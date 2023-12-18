@@ -1,4 +1,4 @@
-package project.meow.Controller.Community;
+package project.meow.board.controller.Community;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
