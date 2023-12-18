@@ -1,22 +1,27 @@
 package project.meow.Controller;
 
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
+//import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/meow")
 public class MainController {
 
     @GetMapping("/login")
     public String loginPage(){
-        return "login_register";
+        return "/main/login";
     }
 
     @GetMapping("/forgot")
     public String forgotPage(){
-        return "login_forgot";
+        return "/main/forgot";
+    }
+
+    @GetMapping("/main")
+    public  String main(){
+        return "/main/main";
     }
 
 //    public String mainPage(@AuthenticationPrincipal User user, Model model){
@@ -25,6 +30,6 @@ public class MainController {
 //        return "mainpage";
 //    }
 
-    @GetMapping("/main")
-    public String mainPage(){ return "mainpage";}
+    @GetMapping("/")
+    public String mainPage(){ return "/main/main";}
 }

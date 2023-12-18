@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -10,19 +12,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="resources/img_main/cat-favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/main/cat-favicon.png">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="resources/css_main/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="resources/css_main/icons.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/icons.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="resources/css_main/plugins.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/plugins.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="resources/css_main/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/style.css">
 </head>
 
 <body>
@@ -35,9 +37,9 @@
                         <div class="row">
                             <div class="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div class="logo">
-                                    <img alt="" src="resources/img_main/logo/cat2-icon.png">
-                                    <a href="mainpage.jsp">
-                                        <img alt="" src="resources/img_main/logo/meow-logo.png">
+                                    <img alt="" src="${pageContext.request.contextPath}/resources/img/main/logo/cat2-icon.png">
+                                    <a href="main.jsp">
+                                        <img alt="" src="${pageContext.request.contextPath}/resources/img/main/logo/meow-logo.png">
                                     </a>
                                 </div>
                             </div>
@@ -54,18 +56,18 @@
                                 <li><a href="#" style="font-family: sans-serif ;">공지사항</a></li>
                                 <li><a href="#"> 커뮤니티 <i class="fa fa-angle-down"></i></a>
                                     <ul class="submenu">
-                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png" width="15%"
+                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/img/main/logo/catfoot.png" width="15%"
                                                                       style="margin-right: 8px;">
                                             자유게시판</a></li>
-                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
+                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/img/main/logo/catfoot.png"
                                                                           width="15%" style="margin-right: 8px;">입양 게시판</a></li>
-                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
+                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/img/main/logo/catfoot.png"
                                                                          width="15%" style="margin-right: 8px;">팁 게시판</a></li>
-                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
+                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/img/main/logo/catfoot.png"
                                                                          width="15%" style="margin-right: 8px;">공구 게시판 </a></li>
-                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
+                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/img/main/logo/catfoot.png"
                                                                            width="15%" style="margin-right: 8px;">짤 게시판</a></li>
-                                        <li><a href="#"><img src="resources/img_main/logo/catfoot.png"
+                                        <li><a href="#"><img src="${pageContext.request.contextPath}/resources/img/main/logo/catfoot.png"
                                                                         width="15%" style="margin-right: 8px;">고양이 백과사전</a></li>
                                     </ul>
                                 </li>
@@ -75,88 +77,20 @@
                 </div>
                 <div class="header-offer">
                     <!-- 우측 상단 -->
-                    <button type="button" onclick="location.href='meow-login-register.html'" class="loginBtn" style="position: relative; top: 1.5rem; left: 3rem; border-radius: 1.5rem; border-width: 1px; border-color: gray; height: 35px; width: 85px; justify-content: center; align-items: center; background-color: white; font-weight: bold; font-size: .75rem; line-height: 1rem; cursor: pointer;
+                    <button type="button" onclick="location.href='login'" class="loginBtn" style="position: relative; top: 1.5rem; left: 3rem; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: white; font-weight: bold; font-size: .75rem; line-height: 1rem; cursor: pointer;
                             outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">로그인</button>
-                    <button type="button" onclick="location.href='meow-login-register.html'" class="joinBtn"
-                            style="position: relative; top: 1.5rem; left: 3rem; border: none; border-radius: 1.5rem; border-width: 1px; border-color: gray; height: 35px; width: 85px; justify-content: center; align-items: center; background-color: crimson; color: white; margin-left: 10px; font-weight: 500; font-size: .75rem; line-height: 1rem; cursor: pointer; outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">회원가입</button>
+                    <button type="button" onclick="location.href='login'" class="joinBtn"
+                            style="position: relative; top: 1.5rem; left: 3rem; border: none; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: crimson; color: white; margin-left: 10px; font-weight: 500; font-size: .75rem; line-height: 1rem; cursor: pointer; outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">회원가입</button>
                     <div class="col-xl-2 col-lg-2 col-md-6 col-8">
                         <div class="header-right-wrap">
-
-                            <!-- <div class="same-style header-search">
-                                <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
-                                <div class="search-content">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search" />
-                                        <button class="button-search"><i class="pe-7s-search"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="same-style account-satting">
-                                <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
-                                <div class="account-dropdown">
-                                    <ul>
-                                        <li><a href="login-register.html">Login</a></li>
-                                        <li><a href="login-register.html">Register</a></li>
-                                        <li><a href="wishlist.html">Wishlist </a></li>
-                                        <li><a href="my-account.html">my account</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="same-style header-wishlist">
-                                <a href="wishlist.html"><i class="pe-7s-like"></i></a>
-                            </div>
-                            <div class="same-style cart-wrap">
-                                <button class="icon-cart">
-                                    <i class="pe-7s-shopbag"></i>
-                                    <span class="count-style">02</span>
-                                </button>
-                                <div class="shopping-cart-content">
-                                    <ul>
-                                        <li class="single-shopping-cart">
-                                            <div class="shopping-cart-img">
-                                                <a href="#"><img alt="" src="assets/img/cart/cart-1.png"></a>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="#">T- Shart & Jeans </a></h4>
-                                                <h6>Qty: 02</h6>
-                                                <span>$260.00</span>
-                                            </div>
-                                            <div class="shopping-cart-delete">
-                                                <a href="#"><i class="fa fa-times-circle"></i></a>
-                                            </div>
-                                        </li>
-                                        <li class="single-shopping-cart">
-                                            <div class="shopping-cart-img">
-                                                <a href="#"><img alt="" src="assets/img/cart/cart-2.png"></a>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="#">T- Shart & Jeans </a></h4>
-                                                <h6>Qty: 02</h6>
-                                                <span>$260.00</span>
-                                            </div>
-                                            <div class="shopping-cart-delete">
-                                                <a href="#"><i class="fa fa-times-circle"></i></a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="shopping-cart-total">
-                                        <h4>Shipping : <span>$20.00</span></h4>
-                                        <h4>Total : <span class="shop-total">$260.00</span></h4>
-                                    </div>
-                                    <div class="shopping-cart-btn btn-hover text-center">
-                                        <a class="default-btn" href="cart-page.html">view cart</a>
-                                        <a class="default-btn" href="checkout.html">checkout</a>
-                                    </div>
-                                </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-
 </header>
+
 <div class="Blog-area pt-100 pb-100">
     <div class="container">
         <div class="row flex-row-reverse">
@@ -169,7 +103,7 @@
                                         <div style="position: relative; padding: 25px 0;">
                                             <span
                                                     style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">BEST</span>
-                                            <img src="resources/img_main/cat.png" width="10%"
+                                            <img src="${pageContext.request.contextPath}/resources/img/main/cat.png" width="10%"
                                                  style="position: relative; left: 15rem;">
                                         </div>
                                     </div>
@@ -241,7 +175,7 @@
                                         <div style="position: relative; padding: 25px 0;">
                                             <span
                                                     style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">커뮤니티</span>
-                                            <img src="resources/img_main/cat1.png" width="10%"
+                                            <img src="${pageContext.request.contextPath}/resources/img/main/cat1.png" width="10%"
                                                  style="position: relative; left: 15rem;">
                                         </div>
                                     </div>
@@ -314,7 +248,7 @@
                                             <div style="position: relative; padding: 25px 0;">
                                                 <span
                                                         style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">Q&A</span>
-                                                <img src="resources/img_main/cat2.png" width="10%"
+                                                <img src="${pageContext.request.contextPath}/resources/img/main/cat2.png" width="10%"
                                                      style="position: relative; left: 15rem;">
                                             </div>
                                         </a>
@@ -388,7 +322,7 @@
                                             <div style="position: relative; padding: 25px 0;">
                                                 <span
                                                         style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">공지사항</span>
-                                                <img src="resources/img_main/cat3.png" width="10%"
+                                                <img src="${pageContext.request.contextPath}/resources/img/main/cat3.png" width="10%"
                                                      style="position: relative; left: 15rem;">
                                             </div>
                                         </a>
@@ -461,6 +395,7 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD:src/main/webapp/WEB-INF/views/mainpage.jsp
 </div>
 </div>
 <footer class="footer-area bg-gray pt-100 pb-70" style="padding: 30px 0 30px 0;">
@@ -485,6 +420,35 @@
                 </div>
             </div>
         </div>
+=======
+
+<footer class="footer-area bg-gray pt-100 pb-70">
+    <div style="border-top: solid 1px rgb(212, 212, 212);">
+        <footer class="footer_container" style="padding-top: 1.74rem; padding-bottom: 1.75rem; border: 0 solid #e5e7eb;">
+            <div class="footer_row" style="max-width: 90%; margin: auto;">
+                <div class="footer_row2" style="display: flex;">
+                    <div class="footer_banner" style="width: 10rem; display: block;">
+                        <a href="homepage">
+                            <img alt="" src="${pageContext.request.contextPath}/resources/img/admin/meow.png">
+                        </a>
+                        <p style="margin-top: 0; text-align: center;">I love cats</p>
+                    </div>
+                    <div class="footer_company" style="padding-left: 5%;">
+                        <div style="font-size: small; padding-top: 3%;">
+                            상호명:
+                            <strong>(주)고사모</strong>
+                            | 대표명: 강민경, 김예지, 문형섭
+                        </div>
+                        <div>
+                            <p style="font-size: small;">Copyright © (주)고사모</p>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+>>>>>>> 5150033f09615e2958daf6ea56fdc9e2047776bf:src/main/webapp/WEB-INF/views/main/main.jsp
     </div>
 </footer>
 
@@ -499,16 +463,16 @@
 <!-- All JS is here
 ============================================ -->
 
-<script src="resources/js_main/vendor/modernizr-3.11.7.min.js"></script>
-<script src="resources/js_main/vendor/jquery-v3.6.0.min.js"></script>
-<script src="resources/js_main/vendor/jquery-migrate-v3.3.2.min.js"></script>
-<script src="resources/js_main/vendor/popper.min.js"></script>
-<script src="resources/js_main/vendor/bootstrap.min.js"></script>
-<script src="resources/js_main/plugins.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/modernizr-3.11.7.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-v3.6.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-migrate-v3.3.2.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/popper.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/plugins.js"></script>
 <!-- Ajax Mail -->
-<script src="resources/js_main/ajax-mail.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/ajax-mail.js"></script>
 <!-- Main JS -->
-<script src="resources/js_main/main.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/main.js"></script>
 
 </body>
 

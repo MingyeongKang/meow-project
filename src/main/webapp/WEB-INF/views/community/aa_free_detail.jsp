@@ -11,19 +11,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/cat-favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/main/cat-favicon.png">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/icons.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/icons.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/plugins.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/plugins.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/style.css">
 </head>
 
 <body>
@@ -194,6 +194,5 @@
     <!--ionicon.js(커뮤니티 아이콘) 모듈-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../../../../../../../../../Users/kangmingyeong/Downloads/meow/community/community_detail.js"></script>
 </body>
 </html>

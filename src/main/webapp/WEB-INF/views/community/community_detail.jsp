@@ -9,19 +9,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/cat-favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/main/cat-favicon.png">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../../../../../../../../Users/kangmingyeong/Downloads/meow/community/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="../../../../../../../../../Users/kangmingyeong/Downloads/meow/community/assets/css/icons.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/icons.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="../../../../../../../../../Users/kangmingyeong/Downloads/meow/community/assets/css/plugins.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/plugins.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="../../../../../../../../../Users/kangmingyeong/Downloads/meow/community/assets/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/style.css">
 </head>
 
 <body>
@@ -67,10 +67,10 @@
                     </div>
                     <div class="header-offer">
                         <!-- 우측 상단 -->
-                        <button class="loginBtn" style="position: relative; top: 1.5rem; left: 3rem; border-radius: 1.5rem; border-width: 1px; border-color: gray; height: 35px; width: 85px; justify-content: center; align-items: center; background-color: white; font-weight: bold; font-size: .75rem; line-height: 1rem; cursor: pointer;
+                        <button class="loginBtn" style="position: relative; top: 1.5rem; left: 3rem; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: white; font-weight: bold; font-size: .75rem; line-height: 1rem; cursor: pointer;
                             outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">로그인</button>
                         <button class="joinBtn"
-                            style="position: relative; top: 1.5rem; left: 3rem; border: none; border-radius: 1.5rem; border-width: 1px; border-color: gray; height: 35px; width: 85px; justify-content: center; align-items: center; background-color: crimson; color: white; margin-left: 10px; font-weight: 500; font-size: .75rem; line-height: 1rem; cursor: pointer; outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">회원가입</button>
+                            style="position: relative; top: 1.5rem; left: 3rem; border: none; border-radius: 1.5rem; border-width: 1px; border-color: rgb(128,128,128); height: 35px; width: 85px; justify-content: center; align-items: center; background-color: crimson; color: white; margin-left: 10px; font-weight: 500; font-size: .75rem; line-height: 1rem; cursor: pointer; outline: none; box-shadow: 1px 4px 0 rgb(0,0,0,0.5);">회원가입</button>
                         <div class="col-xl-2 col-lg-2 col-md-6 col-8">
                             <div class="header-right-wrap">
                             </div>
@@ -92,7 +92,7 @@
                             <div class="col-md-12 col-sm-12 mx-auto" >
                                 <span class="blog-wrap-2 mb-30" style="border: 0 solid black;">
                                     <div class="category" style="background-color: #E6E6E6; border-radius: 0.75rem;">
-                                        <div style="position: relative; padding: 25px 0; width: 871.22px; height: 78; ">
+                                        <div style="position: relative; padding: 25px 0; width: 871.22px; height: 78px; ">
                                             <span
                                             style="font-weight: 600; font-size: 1.125rem; line-height: 1.75rem; margin-left: 2.5rem;">커뮤니티</span>
                                         </div>
@@ -102,7 +102,7 @@
                                     <div>
                                         <div style="border-bottom-style: solid;border-bottom-color: black;border-bottom-width: thin;padding-bottom: 1rem; margin-bottom: 44px;">
                                             <div style="padding-top: 2rem;">작성자</div>
-                                            <div style="width: 138; height:20;">
+                                            <div style="width: 138px; height:20px;">
                                                 <!--작성 시간-->
                                                 <div class="time" style="padding-top: 5px;">1분 전
                                                 <!--조회순-->
@@ -113,7 +113,7 @@
                                         </div>
                                         <h1>제목입니다.</h1>
                                         <!--본문 내용-->
-                                        <div style="margin-top: 44px; margin-bottom: 44;">
+                                        <div style="margin-top: 44px; margin-bottom: 44px;">
                                             <div style="margin-bottom: 10rem;">
                                                 <p> 본문 내용입니다
                                                     본문 내용입니다
@@ -124,20 +124,20 @@
                                             </div>
                                         </div>
                                         <!--좋아요-->
-                                        <div onclick="redheartClick(event);" style="margin-top: 40px;margin-bottom: 50px;height: 32px;width: 871px;display: flex;justify-content: center;align-items: center;border-bottom-style: solid;border-bottom-color: black;border-bottom-width: thin;padding-bottom: 1rem;">
-                                            <img src="../../../../../../../../../Users/kangmingyeong/Downloads/meow/community/assets/img/emp_heart.png" style="width: 32px; padding-bottom: 50px;">
+                                        <div  style="margin-top: 40px;margin-bottom: 50px;height: 32px;width: 871px;display: flex;justify-content: center;align-items: center;border-bottom-style: solid;border-bottom-color: black;border-bottom-width: thin;padding-bottom: 1rem;">
+                                            <img src="${pageContext.request.contextPath}/resources/img/emp_heart.png" style="width: 32px; padding-bottom: 50px;">
                                         </div>
                                     </div>
                                 </span>
                                 <!--댓글 작성칸-->
-                                <div style="margin-top: 2rem; margin-bottom: 30px; border: 1px solid gray; border-radius: 10px; padding: 1.5rem;">
-                                    <textarea style=" border: 1px solid gray; border-radius: 10px; background-color: white; " placeholder="내용을 입력해주세요."></textarea>
+                                <div style="margin-top: 2rem; margin-bottom: 30px; border: 1px solid rgb(128,128,128); border-radius: 10px; padding: 1.5rem;">
+                                    <textarea style=" border: 1px solid rgb(128,128,128); border-radius: 10px; background-color: white; " placeholder="내용을 입력해주세요."></textarea>
                                     <button style="margin-left: auto; display: block; margin-top: 10px; border-radius: 10px; width: 7rem;height: 2.5rem; background-color: #FFBF00; border: none;">댓글쓰기</button>
                                 </div>
                                 <!--댓글 목록-->
                                 <div style="margin-top: 4rem; margin-bottom: 30px; ">
                                     <ul>
-                                        <li style=" padding-bottom: 3rem; margin-top: 3rem; margin-bottom: 3rme; border-bottom: 1px solid gray;">
+                                        <li style=" padding-bottom: 3rem; margin-top: 3rem; margin-bottom: 3rem; border-bottom: 1px solid rgb(128,128,128);">
                                             <div style="color: #FFBF00;">닉네임</div>
                                             <div>5분전 </div>
                                             <div style="margin-top: 1rem;">
@@ -145,7 +145,7 @@
                                             </div>
 
                                         </li>
-                                        <li style=" padding-bottom: 3rem; margin-top: 3rem; margin-bottom: 3rme; border-bottom: 1px solid gray;">
+                                        <li style=" padding-bottom: 3rem; margin-top: 3rem; margin-bottom: 3rem; border-bottom: 1px solid rgb(128,128,128);">
                                             <div style="color: #FFBF00;">닉네임</div>
                                             <div>5분전 </div>
                                             <div style="margin-top: 1rem;">
@@ -164,6 +164,7 @@
         </div>
     </div>
     </div>
+<<<<<<< HEAD:src/main/webapp/WEB-INF/views/community_detail.jsp
     <footer class="footer-area bg-gray pt-100 pb-70" style="padding: 30px 0 30px 0;">
         <div class="container">
             <div class="row">
@@ -186,12 +187,40 @@
                     </div>
                 </div>
             </div>
+=======
+    <footer class="footer-area bg-gray pt-100 pb-70">
+        <div style="border-top: solid 1px rgb(212, 212, 212);">
+            <footer class="footer_container" style="padding-top: 1.74rem; padding-bottom: 1.75rem; border: 0 solid #e5e7eb;">
+                <div class="footer_row" style="max-width: 90%; margin: auto;">
+                    <div class="footer_row2" style="display: flex;">
+                        <div class="footer_banner" style="width: 10rem; display: block;">
+                            <a href="homepage">
+                                <img alt="" src="${pageContext.request.contextPath}/resources/img/admin/meow.png">
+                            </a>
+                            <p style="margin-top: 0; text-align: center;">I love cats</p>
+                        </div>
+                        <div class="footer_company" style="padding-left: 5%;">
+                            <div style="font-size: small; padding-top: 3%;">
+                                상호명:
+                                <strong>(주)고사모</strong>
+                                | 대표명: 강민경, 김예지, 문형섭
+                            </div>
+                            <div>
+                                <p style="font-size: small;">Copyright © (주)고사모</p>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+>>>>>>> 5150033f09615e2958daf6ea56fdc9e2047776bf:src/main/webapp/WEB-INF/views/community/community_detail.jsp
         </div>
     </footer>
 
     <!--ionicon.js(커뮤니티 아이콘) 모듈-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../../../../../../../../../Users/kangmingyeong/Downloads/meow/community/community_detail.js"></script>
+
 </body>
 </html>

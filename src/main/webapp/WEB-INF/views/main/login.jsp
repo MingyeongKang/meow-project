@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -10,25 +12,25 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../img/cat.png">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/main/cat.png">
 
     <!-- CSS
 	============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/bootstrap.min.css">
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="../css/icons.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/icons.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="../css/plugins.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/plugins.css">
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/main/style.css">
 </head>
 
 <body>
 <div class="breadcrumb-area pt-50" style="text-align: center;">
-    <a href="mainpage.jsp">
-        <img src="../img/logo/meow-logo.png" alt="">
+    <a href="/meow/">
+        <img src="${pageContext.request.contextPath}/resources/img/main/logo/meow-logo.png" alt="">
     </a>
 </div>
 <div class="login-register-area pt-30 pb-100">
@@ -54,12 +56,12 @@
                                         <a href="#"
                                            class="d-inline-flex justify-content-center w-60 border rounded-3 px-2 py-2"
                                            style="height: 5rem;">
-                                            <img src="../img/logo/naver.png" alt="">
+                                            <img src="${pageContext.request.contextPath}/resources/img/main/logo/naver.png" alt="">
                                         </a>
                                         <a href="#"
                                            class="d-inline-flex justify-content-center w-60 border rounded-3 px-2 py-2"
                                            style="height: 5rem;">
-                                            <img src=" ../img/logo/kakaotalk.png" alt="">
+                                            <img src="${pageContext.request.contextPath}/resources/img/main/logo/kakaotalk.png" alt="">
                                         </a>
                                     </div>
                                     <form action="#" method="post">
@@ -69,7 +71,7 @@
                                         <input type="password" name="user-password">
                                         <div class="button-box">
                                             <div class="login-toggle-btn">
-                                                <a href="#">계정 찾기</a>
+                                                <a href="forgot">계정 찾기</a>
                                             </div>
                                             <button type="submit"><span>로그인</span></button>
                                         </div>
@@ -104,95 +106,6 @@
         </div>
     </div>
 </div>
-<footer class="footer-area bg-gray pt-100 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-4">
-                <div class="copyright mb-30">
-                    <div class="footer-logo">
-                        <a href="mainpage.jsp">
-                            <img alt="" src="../img/logo/logo.png">
-                        </a>
-                    </div>
-                    <p>© 2021 <a href="#">Flone</a>.<br> All Rights Reserved</p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4">
-                <div class="footer-widget mb-30 ml-30">
-                    <div class="footer-title">
-                        <h3>ABOUT US</h3>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="#">Store location</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Orders tracking</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4">
-                <div class="footer-widget mb-30 ml-50">
-                    <div class="footer-title">
-                        <h3>USEFUL LINKS</h3>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Support Policy</a></li>
-                            <li><a href="#">Size guide</a></li>
-                            <li><a href="#">FAQs</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="footer-widget mb-30 ml-75">
-                    <div class="footer-title">
-                        <h3>FOLLOW US</h3>
-                    </div>
-                    <div class="footer-list">
-                        <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Youtube</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="footer-widget mb-30 ml-70">
-                    <div class="footer-title">
-                        <h3>SUBSCRIBE</h3>
-                    </div>
-                    <div class="subscribe-style">
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <div id="mc_embed_signup" class="subscribe-form">
-                            <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank"
-                                  name="mc-embedded-subscribe-form" method="post"
-                                  action="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
-                                <div id="mc_embed_signup_scroll" class="mc-form">
-                                    <input class="email" type="email" required=""
-                                           placeholder="Enter your email here.." name="EMAIL" value="">
-                                    <div class="mc-news" aria-hidden="true">
-                                        <input type="text" value="" tabindex="-1"
-                                               name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
-                                    </div>
-                                    <div class="clear">
-                                        <input id="mc-embedded-subscribe" class="button" type="submit"
-                                               name="subscribe" value="Subscribe">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 
 
 <!-- Modal -->
@@ -335,7 +248,34 @@
     </div>
 </div>
 <!-- Modal end -->
-
+<footer class="footer-area bg-gray pt-100 pb-70">
+    <div style="border-top: solid 1px rgb(212, 212, 212);">
+        <footer class="footer_container" style="padding-top: 1.74rem; padding-bottom: 1.75rem; border: 0 solid #e5e7eb;">
+            <div class="footer_row" style="max-width: 90%; margin: auto;">
+                <div class="footer_row2" style="display: flex;">
+                    <div class="footer_banner" style="width: 10rem; display: block;">
+                        <a href="homepage">
+                            <img alt="" src="${pageContext.request.contextPath}/resources/img/admin/meow.png">
+                        </a>
+                        <p style="margin-top: 0; text-align: center;">I love cats</p>
+                    </div>
+                    <div class="footer_company" style="padding-left: 5%;">
+                        <div style="font-size: small; padding-top: 3%;">
+                            상호명:
+                            <strong>(주)고사모</strong>
+                            | 대표명: 강민경, 김예지, 문형섭
+                        </div>
+                        <div>
+                            <p style="font-size: small;">Copyright © (주)고사모</p>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</footer>
 
 
 
@@ -347,16 +287,16 @@
 <!-- All JS is here
 ============================================ -->
 
-<script src="../js/vendor/modernizr-3.11.7.min.js"></script>
-<script src="../js/vendor/jquery-v3.6.0.min.js"></script>
-<script src="../js/vendor/jquery-migrate-v3.3.2.min.js"></script>
-<script src="../js/vendor/popper.min.js"></script>
-<script src="../js/vendor/bootstrap.min.js"></script>
-<script src="../js/plugins.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/modernizr-3.11.7.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-v3.6.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-migrate-v3.3.2.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/popper.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/vendor/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/plugins.js"></script>
 <!-- Ajax Mail -->
-<script src="../js/ajax-mail.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/ajax-mail.js"></script>
 <!-- Main JS -->
-<script src="../js/main.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/main/main.js"></script>
 
 </body>
 
