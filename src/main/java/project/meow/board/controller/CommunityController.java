@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/meow")
-public class CommuityController {
+public class CommunityController {
     //jsp test입니다. - 강민경
     @GetMapping("/community_detail")
     public String showTestPage() {

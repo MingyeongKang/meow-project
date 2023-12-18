@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("meow")
-public class ChurrController {
+public class ChurrCommunityController {
     @GetMapping("/churrcommunity_detail")
     public String main(){
         return "churrcommunity/churrcommunity_detail";
