@@ -7,26 +7,26 @@
 </head>
 <body>
     <div style="border-top: solid 1px rgb(212, 212, 212);">
-        <footer class="footer_container" style="padding-top: 1.74rem; padding-bottom: 1.75rem; border: 0 solid #e5e7eb;">
-            <div class="footer_row" style="max-width: 90%; margin: auto;">
-                <div class="footer_row2" style="display: flex;">
-                    <div class="footer_banner" style="width: 10rem; display: block;">
-                        <a href="homepage">
-                            <img alt="" src="${pageContext.request.contextPath}/resources/img/admin/meow.png">
-                        </a>
-                        <p style="margin-top: 0; text-align: center;">I love cats</p>
-                    </div>
-                    <div class="footer_company" style="padding-left: 5%;">
-                        <div style="font-size: small; padding-top: 3%;">
-                            상호명: 
-                            <strong>(주)고사모</strong>
-                            | 대표명: 강민경, 김예지, 문형섭
-                        </div>
-                        <div>
-                            <p style="font-size: small;">Copyright © (주)고사모</p>
+        <footer class="footer-area bg-gray pt-100 pb-70" style="padding: 30px 0 30px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-4">
+                        <div class="copyright mb-30">
+                            <div class="footer-logo">
+                                <img alt="" src="${pageContext.request.contextPath}/resources/img/logo/meow-remove.png">
+                            </div>
+                            <p style="text-align: center"> I love cats</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="col-lg-2 col-md-4 col-sm-4" style="width: 40%;">
+                        <div class="footer-widget mb-30 ml-30" style="margin-top: 45px;">
+                            <div class="footer-list">
+                                <ul>
+                                    <li>상호명: <strong>(주)고사모</strong> | 대표명: 강민경, 김예지, 문형섭</li>
+                                    <li>Copyright © (주)고사모</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

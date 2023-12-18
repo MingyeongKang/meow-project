@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MEOW</title>
-    <link rel="shortcut icon" type="image/png" href="/images/admin/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/cat-favicon.png">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin/manager_styles.css" />
 </head>
 

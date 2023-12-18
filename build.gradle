@@ -35,7 +35,7 @@ dependencies  {
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
 
-	//implementation 'javax.servlet:jstl:1.2'
+	implementation 'javax.servlet:jstl:1.2'
 
 	//Spring Security 의존성 주입
 	implementation 'org.springframework.boot:spring-boot-starter-security'
