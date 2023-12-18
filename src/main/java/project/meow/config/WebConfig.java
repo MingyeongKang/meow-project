@@ -1,4 +1,4 @@
-package project.meow.Config;
+package project.meow.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
