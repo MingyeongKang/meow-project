@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/meow")
 public class CommuityController {
     //jsp test입니다. - 강민경
-    @GetMapping("/Tipcommunity_detail")
+    @GetMapping("/community_detail")
     public String showTestPage() {
-        return "TipCommunity/mypage_change";
+        return "community/community_detail";
     }
 
-    @GetMapping("/Tipcommunity_main")
+    @GetMapping("/community_main")
     public String community_main(){
-        return "tipcommunity_main";
+        return "community/community_main";
     }
 
-    @GetMapping("/Tipcommunity_write")
+    @GetMapping("/community_write")
     public String community_write(){
-        return "tipcommunity_write";
+        return "community/community_write";
     }
 
 }
