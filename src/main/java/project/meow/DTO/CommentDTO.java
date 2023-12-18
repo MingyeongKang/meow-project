@@ -17,5 +17,4 @@ public class CommentDTO {
     private int comment_re_cnt;
     private String comment_delete_yn;
 
-
 }
