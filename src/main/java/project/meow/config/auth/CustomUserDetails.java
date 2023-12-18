@@ -1,4 +1,4 @@
-package project.meow.config;
+package project.meow.config.auth;
 
 public class CustomUserDetails {
 }
