@@ -38,7 +38,7 @@
                             <div class="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div class="logo">
                                     <img alt="" src="${pageContext.request.contextPath}/resources/img/main/logo/cat2-icon.png">
-                                    <a href="main.jsp">
+                                    <a href="/meow/">
                                         <img alt="" src="${pageContext.request.contextPath}/resources/img/main/logo/meow-logo.png">
                                     </a>
                                 </div>
@@ -395,6 +395,32 @@
         </div>
     </div>
 </div>
+<<<<<<< HEAD:src/main/webapp/WEB-INF/views/mainpage.jsp
+</div>
+</div>
+<footer class="footer-area bg-gray pt-100 pb-70" style="padding: 30px 0 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4">
+                <div class="copyright mb-30">
+                    <div class="footer-logo">
+                        <img alt="" src="${pageContext.request.contextPath}/resources/img/logo/meow-remove.png">
+                    </div>
+                    <p style="text-align: center"> I love cats</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4" style="width: 40%;">
+                <div class="footer-widget mb-30 ml-30" style="margin-top: 45px;">
+                    <div class="footer-list">
+                        <ul>
+                            <li>상호명: <strong>(주)고사모</strong> | 대표명: 강민경, 김예지, 문형섭</li>
+                            <li>Copyright © (주)고사모</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+=======
 
 <footer class="footer-area bg-gray pt-100 pb-70">
     <div style="border-top: solid 1px rgb(212, 212, 212);">
@@ -422,6 +448,7 @@
                 </div>
             </div>
         </footer>
+>>>>>>> 5150033f09615e2958daf6ea56fdc9e2047776bf:src/main/webapp/WEB-INF/views/main/main.jsp
     </div>
 </footer>
 

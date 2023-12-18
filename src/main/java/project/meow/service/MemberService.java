@@ -1,4 +1,4 @@
-package project.meow.Service;
+package project.meow.service;
 
 public class MemberService {
 }

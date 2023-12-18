@@ -1,4 +1,4 @@
-package project.meow.DTO;
+package project.meow.board.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
@@ -6,14 +6,15 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class ReplyDTO {
-    private int re_no;
+public class CommentDTO {
     private int comment_no;
     private int post_no;
-    private String re_user_id;
+    private String comment_user;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Seoul")
-    private LocalDate re_date;
-    private Long re_content;
-    private Long re_img;
-    private String re_del_yn;
+    private LocalDate comment_date;
+    private Long comment_content;
+    private Long comment_img;
+    private int comment_re_cnt;
+    private String comment_delete_yn;
+
 }

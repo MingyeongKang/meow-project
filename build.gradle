@@ -17,16 +17,25 @@ repositories {
 }
 
 dependencies  {
+	// spring boot
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	annotationProcessor 'org.projectlombok:lombok'
+
+	// JUnit
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+	// Gradle 5.x 이상
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// jdbc 설정
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+	// JPA 설정
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// mariaDB
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 	implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.2'
-	//자동 디버깅(자동 로드 기능)
 
 	//jsp 의존성 주입
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
@@ -35,11 +44,18 @@ dependencies  {
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
 
-	//implementation 'javax.servlet:jstl:1.2'
-
-	//Spring Security 의존성 주입
+	//Spring Security
 	implementation 'org.springframework.boot:spring-boot-starter-security'
-	testImplementation 'org.springframework.security:spring-security-test'
+	testImplementation("org.springframework.security:spring-security-test")
+
+	// spring security oauth2 client
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+	// spring session jdbc
+	implementation 'org.springframework.session:spring-session-jdbc'
+
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 }
 
 tasks.named('test') {

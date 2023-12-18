@@ -1,8 +1,7 @@
-package project.meow.DTO;
+package project.meow.board.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 

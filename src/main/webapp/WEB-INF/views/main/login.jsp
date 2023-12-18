@@ -64,11 +64,14 @@
                                             <img src="${pageContext.request.contextPath}/resources/img/main/logo/kakaotalk.png" alt="">
                                         </a>
                                     </div>
-                                    <form action="#" method="post">
+                                    <form id="frm" name="frm" action="/meow/login" method="post">
+                                        <c:if test="${param.error}">
+                                            <p class="alert alert-danger"><c:out value="${exception}" /></p>
+                                        </c:if>
                                         <label>아이디</label>
-                                        <input type="text" name="user-name">
+                                        <input id="userid" name="userid" type="text" placeholder="ID를 입력해 주세요." required />
                                         <label>비밀번호</label>
-                                        <input type="password" name="user-password">
+                                        <input id="password" name="password" type="password" placeholder="PW를 입력해 주세요." required />
                                         <div class="button-box">
                                             <div class="login-toggle-btn">
                                                 <a href="forgot">계정 찾기</a>
@@ -107,6 +110,8 @@
     </div>
 </div>
 
+<<<<<<< HEAD
+=======
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
@@ -284,8 +289,29 @@
 
 
 
+>>>>>>> e42db113289d6876e03c7e53a71a0ba594780060
 <!-- All JS is here
 ============================================ -->
+<script>
+    let frm = $("#frm");
+
+    function fnSubmit() {
+        frm.submit();
+    }
+
+    $(function() {
+        $("#password").on("keyup", function(e) {
+            if (e.key == "Enter") fnSubmit();
+        });
+
+        frm.validate({
+            submitHandler: function (form) {
+                // Submit Action..
+                form.submit();
+            }
+        });
+    });
+</script>
 
 <script src="${pageContext.request.contextPath}/resources/js/main/vendor/modernizr-3.11.7.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/main/vendor/jquery-v3.6.0.min.js"></script>

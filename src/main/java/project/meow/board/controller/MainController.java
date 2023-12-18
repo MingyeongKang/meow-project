@@ -1,4 +1,4 @@
-package project.meow.Controller;
+package project.meow.board.controller;
 
 //import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
