@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @RequiredArgsConstructor
-public class mmCommunityDAOImpl implements mmCommunityDAO{
+public class minCommunityDAOImpl implements minCommunityDAO {
 
 
 }

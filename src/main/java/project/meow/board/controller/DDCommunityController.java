@@ -3,10 +3,11 @@ package project.meow.board.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("meow")
-public class ChurrCommunityController {
+public class DDCommunityController {
     @GetMapping("/churrcommunity_detail")
     public String main(){
         return "churrcommunity/churrcommunity_detail";

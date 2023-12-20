@@ -17,11 +17,14 @@ repositories {
 }
 
 dependencies  {
+	/* Log4JDBC */
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
 	// spring boot
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-
-	// JUnit
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// spring security oauth2 client
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	// spring session jdbc
+	implementation 'org.springframework.session:spring-session-jdbc'
 
 	// Gradle 5.x 이상
 	compileOnly 'org.projectlombok:lombok'
@@ -48,11 +51,9 @@ dependencies  {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	testImplementation("org.springframework.security:spring-security-test")
 
-	// spring security oauth2 client
-	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
-	// spring session jdbc
-	implementation 'org.springframework.session:spring-session-jdbc'
+	// JUnit
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
